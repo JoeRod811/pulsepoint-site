@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070D18">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
+<title>Website Design for Local Businesses | Pulse Point Marketing</title>
+<meta name="description" content="Fast, clean, trust-first websites that turn visitors into booked jobs. Built for local service businesses across the U.S. See our work for James Falisi & Son. Free trust audit.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://officialpulsepoint.com/website-design/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pulse Point Marketing">
+<meta property="og:title" content="Website Design for Local Businesses | Pulse Point Marketing">
+<meta property="og:description" content="Get found in the Google map pack. We turn your profile into a storefront that wins the call.">
+<meta property="og:url" content="https://officialpulsepoint.com/website-design/">
+<meta property="og:image" content="https://officialpulsepoint.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--void:#070D18;--ink:#0B1424;--ink-2:#111E33;--line:rgba(255,255,255,.09);--signal:#FFB23E;--signal-deep:#E58F12;--verified:#2ED496;--paper:#F6F4EE;--mist:rgba(246,244,238,.62);--mist-2:rgba(246,244,238,.4);--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace;--maxw:1100px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--void);color:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;letter-spacing:-.015em}
+h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:700}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+h3{font-size:1.2rem}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--signal);display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--signal)}
+.lead{font-size:clamp(1.05rem,1.5vw,1.2rem);color:var(--mist);max-width:60ch}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;padding:1rem 1.7rem;border-radius:8px;border:none;cursor:pointer;background:var(--signal);color:var(--ink);box-shadow:0 10px 30px rgba(255,178,62,.28);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(255,178,62,.4)}
+header{position:sticky;top:0;z-index:60;background:rgba(7,13,24,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 24px;max-width:var(--maxw);margin:0 auto}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:700;font-size:1.18rem}
+.brand-icon{height:30px;width:auto;vertical-align:middle}
+.brand-lockup{height:50px;width:auto;display:block}
+.brand-horizontal{height:38px;width:auto;display:block}
+@media(max-width:600px){.brand-horizontal{height:30px}}
+@media(max-width:600px){.brand-lockup{height:40px}}
+.brand .pin{width:22px;height:22px}
+.navlinks{display:flex;gap:1.6rem;align-items:center}
+.navlinks a{color:var(--mist);font-size:.93rem;font-weight:500}
+.navlinks a:hover{color:var(--signal)}
+.navlinks a.nav-cta,.nav-cta{background:var(--signal);color:var(--ink) !important;padding:.55rem 1.1rem;border-radius:7px;font-weight:600}
+.menu-btn{display:none;background:none;border:none;color:var(--paper);font-size:1.5rem;cursor:pointer}
+.crumb{font-family:var(--mono);font-size:.72rem;color:var(--mist-2);padding:1.6rem 0 0}
+.crumb a:hover{color:var(--signal)}
+.hero{padding:3rem 0 4rem}
+.hero .lead{margin:1.4rem 0 2rem}
+section{padding:4rem 0}
+.section-head{max-width:60ch;margin-bottom:2.5rem}
+.prose p{color:var(--mist);margin-bottom:1.2rem;max-width:68ch;font-size:1.05rem}
+.prose strong{color:var(--paper);font-weight:600}
+.card a{color:var(--signal);text-decoration:underline;text-underline-offset:2px}
+.prose a, .lead a.inlink{color:var(--signal);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.prose a:hover,.lead a.inlink:hover{color:#ffc25e}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1rem}
+.card{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:1.7rem;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,178,62,.35)}
+.card .ic{width:40px;height:40px;color:var(--signal);margin-bottom:1rem}
+.card h3{margin-bottom:.5rem}
+.card p{color:var(--mist);font-size:.95rem}
+.alt{background:var(--ink)}
+.steps{display:grid;gap:1rem;margin-top:1.5rem}
+.step{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:start;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.6rem}
+.step .n{font-family:var(--mono);color:var(--verified);font-size:.8rem;min-width:2.2rem}
+.step h3{font-size:1.08rem;margin-bottom:.3rem}
+.step p{color:var(--mist);font-size:.93rem}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:1.3rem 0;display:flex;justify-content:space-between;gap:1.2rem;font-family:var(--display);font-size:1.1rem;font-weight:600;color:var(--paper)}
+.faq-q .pm{color:var(--signal);font-family:var(--mono);font-size:1.4rem;transition:transform .25s}
+.faq-q[aria-expanded="true"] .pm{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s}
+.faq-a p{color:var(--mist);padding-bottom:1.3rem;max-width:70ch}
+.cta-band{background:linear-gradient(135deg,#0c1830,#070d18);border-top:1px solid var(--line);text-align:center}
+.cta-band .lead{margin:1rem auto 1.8rem}
+.related{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.related a{display:block;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:1.3rem;transition:border-color .2s}
+.related a:hover{border-color:var(--signal)}
+.related .lbl{font-family:var(--mono);font-size:.68rem;color:var(--signal);letter-spacing:.08em}
+.related h3{font-size:1.05rem;margin-top:.4rem}
+footer{background:#050911;color:var(--mist);padding:3rem 0 2rem;margin-top:2rem}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:2rem;margin-bottom:2rem}
+.foot-grid h4{color:var(--paper);font-family:var(--display);margin-bottom:.8rem;font-size:1rem}
+.foot-grid a{display:block;padding:.25rem 0;font-size:.9rem}
+.foot-grid a:hover{color:var(--signal)}
+.social-row{display:inline-flex;gap:.9rem;align-items:center;margin-top:1rem}.social-row a{display:inline-flex;opacity:.85;transition:opacity .2s,transform .2s}.social-row a:hover{opacity:1;transform:translateY(-2px)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:1.4rem;font-size:.83rem;color:var(--mist-2)}
+@media(max-width:860px){.grid,.related,.foot-grid{grid-template-columns:1fr}.navlinks{display:none}.menu-btn{display:block}.navlinks.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--ink);padding:1.2rem 24px;gap:1rem;border-bottom:1px solid var(--line)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px;border-radius:4px}
+.hero-anim-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+@media(max-width:860px){.hero-anim-grid{grid-template-columns:1fr;gap:2rem}}
+.browser-anim{background:#0b1424;border:1px solid var(--line);border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.4);overflow:hidden}
+.bbar{display:flex;align-items:center;gap:.5rem;padding:.6rem .8rem;border-bottom:1px solid var(--line);background:var(--ink-2)}
+.bdot{width:9px;height:9px;border-radius:50%;background:var(--mist-2)}
+.burl{flex:1;margin-left:.5rem;background:#0b1424;border-radius:6px;font-family:var(--mono);font-size:.66rem;color:var(--mist-2);padding:.25rem .6rem}
+.bspeed{font-family:var(--mono);font-size:.6rem;padding:.15rem .45rem;border-radius:4px;transition:.5s}
+.bspeed.slow{background:rgba(255,90,90,.15);color:#ff7a7a;border:1px solid rgba(255,90,90,.4)}
+.bspeed.fast{background:rgba(46,212,150,.15);color:var(--verified);border:1px solid rgba(46,212,150,.5)}
+.screen{height:300px;position:relative;overflow:hidden}
+.messy{position:absolute;inset:0;padding:.7rem;transition:opacity .6s;background:#141414}
+.messy.gone{opacity:0;pointer-events:none}
+.messy .mblock{background:repeating-linear-gradient(45deg,#2a2a2a,#2a2a2a 6px,#222 6px,#222 12px);border:1px solid #3a3a3a;border-radius:3px;margin-bottom:.5rem}
+.messy .mh{height:30px;width:75%}
+.messy .mrow{display:flex;gap:.5rem}
+.messy .mrow .mblock{flex:1;height:50px}
+.messy .mtext{height:9px;margin-bottom:.35rem;width:100%;background:#2a2a2a;border-radius:2px}
+.messy .mtext.s{width:60%}
+.messy .clutter{position:absolute;font-family:var(--mono);font-size:.55rem;color:#ff6b6b;border:1px dashed #ff6b6b;padding:.1rem .3rem;border-radius:3px;background:rgba(0,0,0,.5)}
+.clean{position:absolute;inset:0;padding:1.1rem;background:linear-gradient(165deg,#13233f,#0b1424);opacity:0;transition:opacity .7s;display:flex;flex-direction:column}
+.clean.on{opacity:1}
+.clean .ch{height:14px;width:55%;background:var(--paper);border-radius:4px;margin-bottom:.6rem;opacity:0;transform:translateY(8px);transition:.5s}
+.clean .csub{height:8px;width:72%;background:var(--mist-2);border-radius:3px;margin-bottom:1rem;opacity:0;transform:translateY(8px);transition:.5s .1s}
+.clean .ccta{height:30px;width:120px;background:var(--signal);border-radius:7px;margin-bottom:1rem;opacity:0;transform:translateY(8px);transition:.5s .2s;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.6rem;color:var(--ink);font-weight:600}
+.clean .crow{display:flex;gap:.6rem;margin-top:auto}
+.clean .ccard{flex:1;height:60px;background:var(--ink-2);border:1px solid var(--line);border-radius:8px;opacity:0;transform:translateY(8px);transition:.5s}
+.clean.on .ch,.clean.on .csub,.clean.on .ccta,.clean.on .ccard{opacity:1;transform:none}
+.clean.on .ccard:nth-child(1){transition-delay:.3s}.clean.on .ccard:nth-child(2){transition-delay:.4s}.clean.on .ccard:nth-child(3){transition-delay:.5s}
+@media(prefers-reduced-motion:reduce){.browser-anim *{transition:none!important;animation:none!important}}
+</style>
+<!-- Analytics: replace the placeholder IDs below after creating your accounts -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5Y1HM5XZW"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-Z5Y1HM5XZW');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xct4nchdxq");
+</script>
+<!-- End analytics -->
+</head>
+<body id="top">
+<header>
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="/index.html" aria-label="Pulse Point Marketing home">
+      <img src="/assets/logo-horizontal.png" alt="Pulse Point Marketing" class="brand-horizontal">
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="/google-business-profile-optimization/">GBP</a>
+      <a href="/review-management/">Reviews</a>
+      <a href="/local-seo/">Local SEO</a>
+      <a href="/website-design/">Websites</a>
+      <a href="/google-ads/">Ads</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/about/">About</a>
+      <a class="nav-cta" href="/free-trust-audit/">Free Trust Audit</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<main>
+<div class="wrap"><p class="crumb"><a href="/index.html">Home</a> / Website Design</p></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-anim-grid">
+      <div class="hero-anim-text">
+        <span class="eyebrow">Website Design</span>
+        <h1>A website that turns visitors into booked jobs.</h1>
+        <p class="lead">Your website is where a curious searcher decides whether to trust you. A slow, dated, or confusing site loses them in seconds. We build fast, clean, trust-first websites that pick up where your Google profile leaves off, and turn the visitor your <a href="/google-business-profile-optimization/">Google Business Profile</a> sends into a booked job.</p>
+        <a class="btn" href="/free-trust-audit/">Get your free trust audit</a>
+      </div>
+      <div class="browser-anim" aria-hidden="true">
+        <div class="bbar"><span class="bdot"></span><span class="bdot"></span><span class="bdot"></span><span class="burl">yourbusiness.com</span><span class="bspeed slow" id="speed">3.2s LOAD</span></div>
+        <div class="screen">
+          <div class="messy" id="messy">
+            <div class="mblock mh"></div>
+            <div class="mtext"></div><div class="mtext"></div><div class="mtext s"></div>
+            <div class="mrow"><div class="mblock"></div><div class="mblock"></div><div class="mblock"></div></div>
+            <div class="mtext"></div><div class="mtext s"></div>
+            <div class="clutter" style="top:20%;right:8%">popup</div>
+            <div class="clutter" style="top:55%;left:10%">slow</div>
+            <div class="clutter" style="bottom:12%;right:14%">cluttered</div>
+          </div>
+          <div class="clean" id="clean">
+            <div class="ch"></div><div class="csub"></div>
+            <div class="ccta">Get a Quote</div>
+            <div class="crow"><div class="ccard"></div><div class="ccard"></div><div class="ccard"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Why it matters</span><h2>A pretty site that does not convert is just expensive decoration.</h2></div>
+    <div class="prose"><p>Plenty of websites look fine and still fail, because looking good is not the job. The job is to take someone who is interested and make it effortless for them to trust you and reach out. <strong>If your site is slow, hard to read on a phone, or unclear about what to do next, it is costing you work every day.</strong></p>
+ <p>We build sites the way we build everything: around the customer. Fast load times, clean design, clear next steps, and trust signals front and center. When a builder with a fifty-year reputation like James Falisi and Son trusts us with their site, the standard is set high, and we hold every project to it.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">What you get</span><h2>Built to be fast, clear, and trusted.</h2></div>
+    <div class="grid">
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Speed first</h3><p>Fast load times that keep visitors from bouncing and help your search rankings at the same time.</p></div>
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Mobile-perfect</h3><p>Most local searches happen on a phone. Your site works flawlessly on every screen size.</p></div>
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Trust built in</h3><p>Reviews, real photos, and clear proof placed where they reassure a hesitant visitor.</p></div>
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Clear next step</h3><p>Every page guides the visitor toward one obvious action: contacting you.</p></div>
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Lead capture</h3><p>Forms wired to reach you instantly so no inquiry slips through the cracks.</p></div>
+      <div class="card"><svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z" stroke="currentColor" stroke-width="1.6"/></svg><h3>Easy to find</h3><p>Built on solid <a href="/local-seo/">local SEO</a> foundations so the site supports your local visibility, not fights it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Honest answers</span><h2>Questions you are probably asking.</h2></div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How long does a website take?</span><span class="pm">+</span></button><div class="faq-a"><p>Most local business sites come together in a few weeks, depending on how much content and how many pages you need. We will give you a clear timeline up front.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Will I be able to update it?</span><span class="pm">+</span></button><div class="faq-a"><p>Yes. We build so you can make simple updates yourself, and we are here when you want a hand with bigger changes.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Can you redo my existing site?</span><span class="pm">+</span></button><div class="faq-a"><p>Absolutely. A redesign is often the fastest win. We did exactly that for James Falisi and Son, and we will tell you honestly in your audit whether a refresh or a rebuild makes more sense.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center">Free, no obligation</span>
+    <h2>Ready to be the obvious choice?</h2>
+    <p class="lead">Start with a free trust audit. You will see where you stand and the fastest realistic path forward.</p>
+    <a class="btn" href="/free-trust-audit/">Get your free trust audit</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Keep exploring</span><h2>The rest of the system.</h2></div>
+    <div class="related">
+      <a href="/google-business-profile-optimization/"><span class="lbl">SERVICE</span><h3>GBP Optimization</h3></a>
+      <a href="/review-management/"><span class="lbl">SERVICE</span><h3>Review Management</h3></a>
+      <a href="/local-seo/"><span class="lbl">SERVICE</span><h3>Local SEO</h3></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/index.html" style="margin-bottom:.8rem"><img src="/assets/icon.png" alt="Pulse Point Marketing" class="brand-icon" width="28" height="28"> Pulse Point</a>
+        <p style="max-width:34ch;font-size:.92rem">Helping local service businesses across the United States build measurable trust online, and turn searches into customers.</p>
+      </div>
+      <div><h4>Services</h4><a href="/google-business-profile-optimization/">GBP Optimization</a><a href="/review-management/">Review Management</a><a href="/local-seo/">Local SEO</a><a href="/website-design/">Website Design</a><a href="/google-ads/">Google Ads</a></div>
+      <div><h4>Company</h4><a href="/about/">About</a><a href="/case-study-james-falisi/">Client Story</a><a href="/contact/">Contact</a><a href="/pricing/">Pricing</a><a href="/free-trust-audit/">Free Trust Audit</a></div>
+      <div><h4>Get started</h4><a href="/free-trust-audit/">Free Trust Audit</a><a href="tel:+18564983069">(856) 498-3069</a><br><a href="/privacy/" style="font-size:.82rem;color:var(--mist-2)">Privacy</a><a href="/terms/" style="font-size:.82rem;color:var(--mist-2)">Terms</a></div>
+    </div>
+    <div class="foot-bottom">&copy; <span id="yr"></span> Pulse Point Marketing, LLC &middot; Williamstown, NJ &middot; Veteran-owned
+      <div class="social-row">
+        <a href="https://share.google/DMPAvRYwTsgngQeHh" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21.6 12.2c0-.7-.06-1.4-.18-2H12v3.8h5.4a4.6 4.6 0 01-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" fill="#FFB23E"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0012 22z" fill="#FFB23E"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 002 12c0 1.6.4 3.1 1.1 4.6L6.4 14z" fill="#FFB23E" opacity=".7"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0012 2 10 10 0 003.1 7.4L6.4 10c.8-2.4 3-4.1 5.6-4.1z" fill="#FFB23E"/></svg></a>
+        <a href="https://www.linkedin.com/in/joe-rodriguez-7b39381a6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFB23E" aria-hidden="true"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.3 18.3v-7H6v7h2.3zM7.2 10.3a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6zM18 18.3v-3.8c0-2-.43-3.6-2.8-3.6-1.14 0-1.9.63-2.2 1.2h-.03v-1H10.8v7H13v-3.5c0-.92.17-1.8 1.3-1.8 1.12 0 1.13 1.05 1.13 1.86v3.4H18z"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61560420873533" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFB23E" aria-hidden="true"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.75-1.6 1.5V12h2.8l-.45 2.9h-2.3v7A10 10 0 0022 12z"/></svg></a>
+        <a href="https://www.instagram.com/officialpulsepoint/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#FFB23E" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="#FFB23E" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="#FFB23E"/></svg></a>
+      </div></div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://officialpulsepoint.com/#org"}, {"@type": "WebSite", "@id": "https://officialpulsepoint.com/#website", "url": "https://officialpulsepoint.com/", "name": "Pulse Point Marketing", "publisher": {"@id": "https://officialpulsepoint.com/#org"}, "inLanguage": "en-US"}, {"@type": "WebPage", "@id": "https://officialpulsepoint.com/website-design/#webpage", "url": "https://officialpulsepoint.com/website-design/", "name": "Website Design for Local Businesses | Pulse Point Marketing", "isPartOf": {"@id": "https://officialpulsepoint.com/#website"}, "inLanguage": "en-US", "breadcrumb": {"@id": "https://officialpulsepoint.com/website-design/#breadcrumb"}}, {"@type": "BreadcrumbList", "@id": "https://officialpulsepoint.com/website-design/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://officialpulsepoint.com/"}, {"@type": "ListItem", "position": 2, "name": "Website Design", "item": "https://officialpulsepoint.com/website-design/"}]}, {"@type": "Service", "@id": "https://officialpulsepoint.com/website-design/#service", "name": "Website Design", "serviceType": "Website Design", "provider": {"@id": "https://officialpulsepoint.com/#business"}, "areaServed": {"@type": "Country", "name": "United States"}, "url": "https://officialpulsepoint.com/website-design/", "description": "Fast, conversion-focused website design for local businesses across the U.S., built to turn visitors into booked jobs.", "isPartOf": {"@id": "https://officialpulsepoint.com/website-design/#webpage"}}, {"@type": "FAQPage", "@id": "https://officialpulsepoint.com/website-design/#faq", "mainEntity": [{"@type": "Question", "name": "How long does a website take to build?", "acceptedAnswer": {"@type": "Answer", "text": "Most local business sites come together in a few weeks depending on content and page count. We provide a clear timeline up front."}}, {"@type": "Question", "name": "Will I be able to update the website myself?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build so you can make simple updates yourself, and we help with bigger changes when you want."}}, {"@type": "Question", "name": "Can you redesign my existing website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A redesign is often the fastest win. We did exactly that for James Falisi and Son and will advise honestly whether a refresh or rebuild fits."}}]}]}
+</script>
+
+
+
+
+
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
+mb.addEventListener('click',function(){var o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){var open=q.getAttribute('aria-expanded')==='true';q.setAttribute('aria-expanded',!open);var a=q.nextElementSibling;a.style.maxHeight=open?null:a.scrollHeight+'px';});});
+</script>
+<script>
+(function(){
+var messy=document.getElementById('messy'),clean=document.getElementById('clean'),speed=document.getElementById('speed');
+if(!messy||!clean)return;
+var timers=[];
+function run(){timers.forEach(clearTimeout);timers=[];messy.classList.remove('gone');clean.classList.remove('on');speed.className='bspeed slow';speed.textContent='3.2s LOAD';timers.push(setTimeout(function(){messy.classList.add('gone');clean.classList.add('on');speed.className='bspeed fast';speed.textContent='0.4s LOAD';},1600));}
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){run();window._wloop=setInterval(run,4200);}
+else{messy.classList.add('gone');clean.classList.add('on');speed.className='bspeed fast';speed.textContent='0.4s LOAD';}
+})();
+</script>
+</body>
+</html>
