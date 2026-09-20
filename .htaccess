@@ -2,3 +2,6 @@ RewriteEngine On
 
 # Consolidate duplicate HTML URL to the canonical clean URL
 Redirect 301 /trust-visibility.html /trust-visibility/
+
+# Trust Score page moved
+Redirect 301 /free-trust-audit /trust-score
