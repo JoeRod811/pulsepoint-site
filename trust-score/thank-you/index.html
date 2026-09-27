@@ -110,11 +110,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3043847579311145');
+fbq('init', '1708983804564139');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3043847579311145&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1708983804564139&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <!-- End analytics -->
@@ -180,15 +180,14 @@ src="https://www.facebook.com/tr?id=3043847579311145&ev=PageView&noscript=1"
   </div>
 </footer>
 <script>
-/* Fire Purchase once per buyer. Skips repeat loads (refresh, back button) within 30 minutes. */
+/* Fire Purchase only after a real Stripe payment (session_id in URL), once per session. */
 (function(){
-  var KEY='pp_tsr_purchase_ts',now=Date.now(),last=0;
-  try{last=parseInt(localStorage.getItem(KEY)||'0',10)||0;}catch(e){}
-  if(now-last<30*60*1000){return;}
-  try{localStorage.setItem(KEY,String(now));}catch(e){}
-  var id='tsr-'+now;
-  try{if(window.fbq){fbq('track','Purchase',{value:7,currency:'USD',content_name:'Trust Score Report'});}}catch(e){}
-  try{if(window.gtag){gtag('event','purchase',{transaction_id:id,value:7,currency:'USD',items:[{item_name:'Trust Score Report',price:7,quantity:1}]});}}catch(e){}
+  var sid=new URLSearchParams(window.location.search).get('session_id');
+  if(!sid||sid.indexOf('cs_')!==0){return;}
+  var KEY='pp_tsr_purchase_'+sid;
+  try{if(localStorage.getItem(KEY)){return;}localStorage.setItem(KEY,'1');}catch(e){}
+  try{if(window.fbq){fbq('track','Purchase',{value:7,currency:'USD',content_name:'Trust Score Report'},{eventID:sid});}}catch(e){}
+  try{if(window.gtag){gtag('event','purchase',{transaction_id:sid,value:7,currency:'USD',items:[{item_name:'Trust Score Report',price:7,quantity:1}]});}}catch(e){}
 })();
 </script>
 
