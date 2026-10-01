@@ -19,9 +19,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
-:root{--void:#070D18;--ink:#0B1424;--ink-2:#111E33;--line:rgba(255,255,255,.09);--signal:#FFB23E;--signal-deep:#E58F12;--verified:#2ED496;--paper:#F6F4EE;--mist:rgba(246,244,238,.62);--mist-2:rgba(246,244,238,.4);--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace;--maxw:1100px}
+:root{--void:#070D18;--ink:#0B1424;--ink-2:#111E33;--line:rgba(255,255,255,.09);--signal:#FFB23E;--signal-deep:#E58F12;--verified:#2ED496;--paper:#F6F4EE;--mist:rgba(246,244,238,.62);--mist-2:rgba(246,244,238,.55);--display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace;--maxw:1100px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:var(--body);background:var(--void);color:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -86,7 +87,7 @@ section{padding:4rem 0}
 .related h3{font-size:1.05rem;margin-top:.4rem}
 footer{background:#050911;color:var(--mist);padding:3rem 0 2rem;margin-top:2rem}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:2rem;margin-bottom:2rem}
-.foot-grid h4{color:var(--paper);font-family:var(--display);margin-bottom:.8rem;font-size:1rem}
+.foot-grid h4,.foot-grid .foot-h{color:var(--paper);font-family:var(--display);margin-bottom:.8rem;font-size:1rem;font-weight:700;line-height:1.6;letter-spacing:normal}
 .foot-grid a{display:block;padding:.25rem 0;font-size:.9rem}
 .foot-grid a:hover{color:var(--signal)}
 .social-row{display:inline-flex;gap:.9rem;align-items:center;margin-top:1rem}.social-row a{display:inline-flex;opacity:.85;transition:opacity .2s,transform .2s}.social-row a:hover{opacity:1;transform:translateY(-2px)}
@@ -114,7 +115,7 @@ gtag('config','G-Z5Y1HM5XZW');
 <header>
   <nav class="nav" aria-label="Primary">
     <a class="brand" href="/" aria-label="Pulse Point Marketing home">
-      <img src="/assets/logo-horizontal.png" alt="Pulse Point Marketing" class="brand-horizontal">
+      <img src="/assets/logo-horizontal.webp" alt="Pulse Point Marketing" class="brand-horizontal" width="152" height="38">
     </a>
     <div class="navlinks" id="navlinks">
       <a href="/trust-score/">Trust Score</a>
@@ -194,12 +195,12 @@ gtag('config','G-Z5Y1HM5XZW');
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="/" style="margin-bottom:.8rem"><img src="/assets/icon.png" alt="Pulse Point Marketing" class="brand-icon" width="28" height="28"> Pulse Point</a>
+        <a class="brand" href="/" style="margin-bottom:.8rem"><img src="/assets/icon-64.webp" alt="Pulse Point Marketing" class="brand-icon" width="28" height="28" loading="lazy"> Pulse Point</a>
         <p style="max-width:34ch;font-size:.92rem">AI trust visibility for contractors. We strengthen the signals that help your business get found, trusted and chosen by people, Google and AI.</p>
       </div>
-      <div><h4>The System</h4><a href="/trust-score/">Trust Score</a><a href="/trust-visibility/">Trust Visibility</a><a href="/website-design/">Trust-First Websites</a><a href="/google-ads/">Google Ads</a><a href="/pricing/">Pricing</a></div>
-      <div><h4>Trust Signals</h4><a href="/google-business-profile-optimization/">Google Business Profile</a><a href="/review-management/">Reputation &amp; Reviews</a><a href="/local-seo/">Local Search Visibility</a><a href="/case-study-james-falisi/">Client Story</a></div>
-      <div><h4>Pulse Point</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/trust-score/">Get Your Trust Score</a><a href="tel:+18564983069">(856) 498-3069</a><br><a href="/privacy/" style="font-size:.82rem;color:var(--mist-2)">Privacy</a><a href="/terms/" style="font-size:.82rem;color:var(--mist-2)">Terms</a></div>
+      <div><h2 class="foot-h">The System</h2><a href="/trust-score/">Trust Score</a><a href="/trust-visibility/">Trust Visibility</a><a href="/website-design/">Trust-First Websites</a><a href="/google-ads/">Google Ads</a><a href="/pricing/">Pricing</a></div>
+      <div><h2 class="foot-h">Trust Signals</h2><a href="/google-business-profile-optimization/">Google Business Profile</a><a href="/review-management/">Reputation &amp; Reviews</a><a href="/local-seo/">Local Search Visibility</a><a href="/case-study-james-falisi/">Client Story</a></div>
+      <div><h2 class="foot-h">Pulse Point</h2><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/trust-score/">Get Your Trust Score</a><a href="tel:+18564983069">(856) 498-3069</a><br><a href="/privacy/" style="font-size:.82rem;color:var(--mist-2)">Privacy</a><a href="/terms/" style="font-size:.82rem;color:var(--mist-2)">Terms</a></div>
     </div>
     <div class="foot-bottom">&copy; <span id="yr"></span> Pulse Point Marketing, LLC &middot; Williamstown, NJ &middot; Veteran-owned
       <div class="social-row">
